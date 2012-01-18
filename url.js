@@ -29,6 +29,9 @@ javascript:void(function(){
 		if(mofoListItems[i].getElementsByTagName('cite').length!=0){
 		if(mofoListItems[i].getElementsByTagName('h3')[0].getElementsByTagName('a')[0].href.indexOf('q=related')==-1){
 			r += 1;
+			if(document.getElementById('result_' + r)){
+				document.getElementById('result_' + r).parentNode.removeChild(document.getElementById('result_' + r));
+			}
 			blueLink = mofoListItems[i].getElementsByTagName('h3')[0].getElementsByTagName('a')[0];
 			divsInVSC = mofoListItems[i].firstChild.getElementsByTagName('div');
 			linkURL = blueLink.href;
@@ -65,7 +68,6 @@ javascript:void(function(){
 
 			message += '<tr><td align="center" bgcolor="' + bgColor + '" title="Jump to this SERP listing"><a href="#result_' + r + '" style="text-decoration:none;font-size:medium;font-weight:bold;display:block;width:33px;height:33px;line-height:33px">&#x21d0;</a></td><td align="right" bgcolor="' + bgColor + '" title="SERP position">' + r + '</td><td bgcolor="' + bgColor + '" title="' + linkURL + '" style="color:#093">' + citation.innerHTML + '</td><td align="right" bgcolor="' + bgColor + '" title="number of characters">' + displayURL.length + '</td><td align="right" bgcolor="' + bgColor + '" title="width in pixels">' + citation.offsetWidth + '</td></tr>';
 
-			if(document.getElementById('result_' + r)){document.getElementById('result_' + r).parentNode.removeChild(document.getElementById('result_' + r));}
 			jumpLink = document.createElement('div');
 			jumpLink.id = 'result_' + r;
 			mofoListItems[i].insertBefore(jumpLink,mofoListItems[i].firstChild);
