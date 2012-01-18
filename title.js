@@ -59,6 +59,7 @@ javascript:void(function(){
 
 			message += '<tr><td align="center" bgcolor="' + bgColor + '" title="Jump to this SERP listing"><a href="#result_' + r + '" style="text-decoration:none;font-size:medium;font-weight:bold;display:block;width:33px;height:33px;line-height:33px">&#x21d0;</a></td><td align="right" bgcolor="' + bgColor + '" title="SERP position">' + r + '</td><td bgcolor="' + bgColor + '" title="' + linkURL + '"><div style="color:#12c;font-size:medium;text-decoration:underline;white-space:nowrap;width:512px;overflow:hidden;text-overflow:ellipsis">' + blueLink.innerHTML + '</div></td><td align="right" bgcolor="' + bgColor + '" title="number of characters">' + linkText.length + '</td><td align="right" bgcolor="' + bgColor + '" title="width in pixels">' + blueLink.offsetWidth + '</td></tr>';
 
+			if(document.getElementById('result_' + r)){document.getElementById('result_' + r).parentNode.removeChild(document.getElementById('result_' + r));}
 			jumpLink = document.createElement('div');
 			jumpLink.id = 'result_' + r;
 			mofoListItems[i].insertBefore(jumpLink,mofoListItems[i].firstChild);
