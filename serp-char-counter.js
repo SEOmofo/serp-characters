@@ -259,11 +259,11 @@
 				YUI().use('dd', function (Y) {
 					var dd = new Y.DD.Drag({
 						// selector of the node that initiates drag
-						node: '.drag-area',
+						node: '#mofo-buttons',
 						// selector of the draggable node
 						dragNode: '#mofo-serp-data',
 						// reset cursor to node center on drag
-						startCentered: true
+						// startCentered: true
 					});
 				});
 				// Resize
