@@ -6,6 +6,7 @@ body {
 	border: 1px solid #9eaeb0;
 	border-bottom: none;
 	padding-bottom: 1px;
+    cursor: move;
 }
 
 .mofo-button {
