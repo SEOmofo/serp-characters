@@ -31,7 +31,7 @@
 	var mofoCSS = document.createElement('link');
 	mofoCSS.setAttribute('rel', 'stylesheet');
 	mofoCSS.setAttribute('type', 'text/css');
-	mofoCSS.setAttribute('href', 'http://www.seomofo.com/nobots/css/serp.css');
+	mofoCSS.setAttribute('href', 'http://github.seomofo.com/serp-characters/serp-char-counter.css');
 	document.getElementsByTagName('head')[0].appendChild(mofoCSS);
 
 
