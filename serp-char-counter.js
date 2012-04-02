@@ -23,9 +23,8 @@
     var minWidthJumpLinkId = '';
     var maxWidthJumpLinkId = '';
 
-    var yuiScriptURL = 'https://raw.github.com/gist/2270117/yui-min.js';
-    var mofoStylesheetURL = 'http://www.seomofo.com/nobots/css/serp.css';
-//    var mofoStylesheetURL = 'https://raw.github.com/gist/2270117/serp-char-counter.css';
+    var yuiScriptURL = 'http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js';
+    var mofoStylesheetURL = 'http://github.seomofo.com/serp-characters/serp-char-counter.css';
     var jQueryScriptURL = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
 
 
